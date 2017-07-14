@@ -1,0 +1,26 @@
+#sizing{
+	display: inline-block;
+	border: 5px solid #656565;
+}
+body{
+	font-family: 'Times New Roman';
+	color: #656565;
+	font-size: 20px;
+	line-height: 17px;
+/*	margin: 100px;
+*/
+}
+a:hover{
+	color: #20222a;
+}
+#center{
+	text-align: center;
+}
+#txt{
+	
+	margin-left: 230px;
+	
+}
+#txt2{
+	color: steelblue;
+}
