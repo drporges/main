@@ -27,3 +27,19 @@ For good visualization of this weirdness, see
 !!true
 	--> true
 etc
+
+### Conditionals:
+
+#### IF
+
+```
+const x = 5;
+
+if (x<0){
+	alert('I am a big number');
+} else if (x>0 && x <=5){
+	alert('I am the right number');
+} else {
+	alert ('What is going on');
+}
+```
