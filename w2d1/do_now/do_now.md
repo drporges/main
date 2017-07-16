@@ -1,6 +1,4 @@
-# Welcome to Javascript
-
-![js](http://www.mastergradeit.co.za/files/thumb/289/200)
+# JS Do Now
 
 ## Setup
 
@@ -9,7 +7,7 @@ Make a folder called `js_basics` inside your do_now folder. Inside `js_basics` t
 
 ## Conceptual Questions
 
-####Give an example in JavaScript along with your answers
+#### Give an example in JavaScript along with your answers
 
 1. How do we assign a value to a variable? 
 2. How do we change the value of a variable? 
