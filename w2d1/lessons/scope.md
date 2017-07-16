@@ -130,10 +130,11 @@ const car = function() {
 - Makes collaborative coding liable to break as others can accidentally manipulate external logic
 
 
-##### const
-const is a keyword to instantiate a variable only in that scope.
-- using const in global scope makes the variable accessible everywhere
-- not using the keyword const: if the variable doesn't exit, it will create it.
+##### const/let
+Reminder: use const by default, use let if the variable will be redefined later in the JS.
+const/let are keywords to instantiate a variable only in that scope.
+- using const/let in global scope makes the variable accessible everywhere
+- not using the keyword const/let: if the variable doesn't exit, it will create it.
 	- if the variable already exists anywhere in the accessible scope (inside can access outside) it will use the outside one instead of creating a new one.
 	- This is very bad as it can allow yourself or others to manipulate code outside it's intended functionality!
 
