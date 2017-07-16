@@ -249,7 +249,7 @@ showMeKeys(andrewsDog);
 ##### Exercise
 - Create a function called "showMeValues" that takes an object as a parameter.
 - It should iterate through all the attributes in the object and console.log all the values.
-- Invoke your showMeValues with joesDog to test that it works!
+- Invoke your showMeValues with andrewsDog to test that it works!
 
 ### Resources:
 [MDN JS Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
