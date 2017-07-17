@@ -15,7 +15,7 @@ You will need to use pop-up prompts to get user input and alert.  Check out this
 
 Once you've figured out the basics, it's up to you to make the game you want, but remember, START SIMPLE. Break the problem down as far as you can and don't move on until the smallest piece works.  Pseudocoding is important!
 
-You may want to start with defining the necessary Objects and their poperties(also called keys).  You can use the whiteboard or some paper.
+You may want to start with defining the necessary Objects and their properties (also called keys).  You can use the whiteboard or some paper.
 
 
 #### Build a game of battling alien spaceships using Javascript.
@@ -63,6 +63,7 @@ Can you break your game down into convenient functions?
 
 
 ##### BONUSES:
+
 ```
   The aliens have gained emotions and now can attack more than one at a time.
 ```
