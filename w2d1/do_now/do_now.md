@@ -39,9 +39,21 @@ Make a folder called `js_basics` inside your do_now folder. Inside `js_basics` t
 
 # Javascript - Boolean operators
 
-
 #### 1.
 Using the provided variable definitions, replace the blanks with a mathematical or boolean operator that evaluates the expression to true. :wave:
+
+Remember:
+
+<ul>
+  <li>==</li>
+  <li>===</li>
+  <li>!=</li>
+  <li>!==</li>
+  <li>></li>
+  <li><</li>
+  <li>>=</li>
+  <li><=</li>
+</ul>
 
 ```
   var a = 4;
