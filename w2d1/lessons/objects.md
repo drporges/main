@@ -34,7 +34,7 @@ In essence, what we're talking about are key/value pairs.
 	- Values can be common
 
 ```javascript
-let sample1 = {
+const sample1 = {
 	name: "Andrew",
 	age: 26,
 	cool: true
@@ -42,7 +42,7 @@ let sample1 = {
 ```
 
 ```
-let sample2 = {
+const sample2 = {
 	name: "Andrew",
 	name: "McAndrewFace",
 	age: 26,
@@ -145,7 +145,7 @@ Blueprints aren't buildings. They are an actual tangible thing that tells you th
 How does this info relate to object constructors?
 
 ```javascript
-var sampleObject = new Object()
+const sampleObject = new Object()
 ```
 
 I just used the Class for `Object` (the initial Object that came free out the box) and used the keyword `new` to replicate a new version of the class. Therefore, we got a new object.
@@ -155,12 +155,12 @@ If this is confusing, it's cool. We'll pass this again and often.
 ##### Object Literal Syntax AKA Object Initializer
 
 ```javascript
-let myDog = {};
+const myDog = {};
 ```
 
 I've just created a brand new blank object using object literal notation and set it to a variable called myDog.
 
-*Remember, use `let` when creating a new varaible for the first time. This is SUPER important to prevent polluting global scope and taming the javascript beast!
+*Remember, use `const` when creating a new varaible for the first time. This is SUPER important to prevent polluting global scope and taming the javascript beast!
 
 -----
 BONUS CONTENT
@@ -195,7 +195,7 @@ RECAP:
 You can also call the create function off the base Class of Object.
 
 ```javascript
-let Car = {
+const Car = {
 	model: "Juke",
 	year: 2012
 }
@@ -207,7 +207,7 @@ const myCar = Object.create(Car);
 As we've said before, the value of a property can be anything in JavaScript, means we can also attach functions to objects properties. When a function is attached to a property, this function becomes a method. Methods are defined the exact same way as a function, except that they have to be defined as the property of an object.
 
 ```javascript
-let myCar = {
+const myCar = {
 	model: "A4",
 	make: "Audi",
 	color: "Very Black",

@@ -72,7 +72,7 @@ Let's start by organizing data based on logical context.
 	- cc number
 
 ```javascript
-let car1 = {
+const car1 = {
     make: 'Honda',
     model: 'Civic',
     year: '2016',
@@ -93,7 +93,7 @@ Let's build a simple game together using objects and functions.
 
 ##### Create Andrew
 ```javascript
-let andrew = {
+const andrew = {
 	heath: 100,
 	attack_damage: 9001,
 	alive: true
@@ -102,7 +102,7 @@ let andrew = {
 
 ##### Create Monster
 ```javascript
-let monster = {
+const monster = {
 	name: "Monster McMonsterface",
 	health: 100,
 	attack_damage: 10,
@@ -116,7 +116,7 @@ Let's start by adding a function purely for testing purposes...
 Add a function called attack to the andrew object that will console log him attacking and state the amount of damage he will do.
 
 ```javascript
-var andrew = {
+const andrew = {
 	health: 100,
 	attackDamage: 9001,
 	alive: true,
@@ -144,7 +144,7 @@ The keyword `this` is confusing, is it the only way to make this work? No, but i
 But as promised, there's always another way...
 
 ```javascript
-var andrew = {
+const andrew = {
 	health: 100,
 	attackDamage: 9001,
 	alive: true,
@@ -159,14 +159,14 @@ andrew.attack(andrew.attackDamage);
 ##### Attacking the monster
 
 ```javascript
-var monster = {
+const monster = {
 	name: "Monster McMonsterface",
 	health: 100,
 	attack_damage: 10,
 	alive: true
 }
 
-var andrew = {
+const andrew = {
 	health: 100,
 	attackDamage: 9001,
 	alive: true,
