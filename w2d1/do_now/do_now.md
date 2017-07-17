@@ -12,7 +12,6 @@ Make a folder called `js_basics` inside your do_now folder. Inside `js_basics` t
 1. How do we assign a value to a variable? 
 2. How do we change the value of a variable? 
 3. How do we assign an existing variable to a new variable?
-4. How do we use a variable within an expression? 
 
 ## Exercises
 
