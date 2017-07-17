@@ -6,7 +6,15 @@
 
 [Mozilla Developer Network Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
-  
+2. Write a function that takes an array as a parameter. The function should return the median number in an array.
+
+Example:
+Given the following array:
+
+```
+  [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+```
+Use some kind of *sort*ing method to put the values in order first, then somehow access the median element, somehow using the length of the array...somehow.
 ...
 
 ### Functions within Objects
@@ -65,3 +73,17 @@ honda.drive()
 const suburban = car("Chevrolet", "Suburban", ["4-Wheel Drive"])
 // => { make: "Chevrolet", model: "Suburban", options: ["4-Wheel Drive"], drive: Function }
 ```
+
+<hr>
+
+### Exercise 2
+
+Create 5 blank objects.
+
+Set each object to a variable named after an animal ex: var chicken, var dog, etc
+
+Add a name k/v pair to each object (feel free to use any names you want)
+
+Each animal should have a function that console.log's a noise they make (ex: dog's bark)
+
+Invoke each object's noise function
