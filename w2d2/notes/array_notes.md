@@ -72,7 +72,7 @@ console.log(sliced); // ['one', 'two']
 The forEach() method executes a provided function once for each array element.
 
 ```
-var arr = ['a', 'b', 'c'];
+const arr = ['a', 'b', 'c'];
 
 arr.forEach(function(element) {
     console.log(element);

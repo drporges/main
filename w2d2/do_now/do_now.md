@@ -1,5 +1,21 @@
 # Do Now!
 
+## Pre-Do Now
+
+When you come in... 
+
+```
+git add .
+git commit -m "push for today 7/19""
+git push origin master
+```
+
+then
+
+```
+git pull upstream master
+```
+
 ## JS: Functions
 
 1. Define a function `reverseString` that returns the reversal of a string. For example, reverseString("jag testar") should return the string "ratset gaj". Hint: there is a `.reverse()` method but it only works on arrays. You can `.split('')` a string to turn it into an array, and `.join('')` it back together again into a string.
@@ -56,31 +72,11 @@ console.log(heart);
 
 ## Concise Object Methods & Properties Exercise
 
-Complete the `car` function below so that it returns an object resembling the return values indicates in the snippet below.
+### Exercise 1
 
-> Hint: you'll need to use ES6 techniques learned earlier in this lesson to fully complete this exercise.
+Create 5 empty objects.
 
-```js
-function car(make, model, options){
-  return // Your code goes here
-}
-
-const civic = car("Honda", "Civic")
-// => { make: "Honda", model: "Civic", options: ["Power Steering"], drive: Function }
-honda.drive()
-// => "Vroom!"
-
-const suburban = car("Chevrolet", "Suburban", ["4-Wheel Drive"])
-// => { make: "Chevrolet", model: "Suburban", options: ["4-Wheel Drive"], drive: Function }
-```
-
-<hr>
-
-### Exercise 2
-
-Create 5 blank objects.
-
-Set each object to a variable named after an animal ex: var chicken, var dog, etc
+Set each object to a variable named after an animal ex: const chicken, const dog, etc
 
 Add a name k/v pair to each object (feel free to use any names you want)
 
