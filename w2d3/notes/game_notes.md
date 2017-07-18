@@ -18,7 +18,7 @@ const turn = 0;
 	<li>Attack Damage?</li>
 </ul>  
 
-#### If you want to make it randomized...
+#### If you want to make attack damage randomized...
 
 ```
 const playerAttackDamage = Math.floor(Math.random()* 13 + 5); // sets dmg to be between 5 and 13
@@ -44,9 +44,11 @@ const enemyTurn = function(){
 };
 
 const battle = function(){
+// this should be where the main 'battle' or your game takes place.  notice how you can re-invoke this function whenever you'd want?
+
 	// would I maybe want to launch players turn OR enemy turn depending on if the turn is even or odd?  
 
-		if(turn%2==0?){
+		if(turn%2==0){
 		// execute player's turn
 		} else {
 		// execute enemy turn
@@ -55,7 +57,7 @@ const battle = function(){
 	// what if player's health = 0?
 };
 
-battle(); // execute the battle function
+battle(); // execute the battle function.  where would i want to do this?
 ```
 
 ### 5. What if the game is over?
@@ -69,3 +71,18 @@ if (player health = 0 || player alive=false || enemies eliminated){
 	// relaunch game function //
 }
 ```
+
+
+## So, overall structure should be like.
+
+##### 1: Declare global variables
+
+##### 2: Establish what happens during player's turn
+
+##### 3: Establish what happens during enemy turn
+
+##### 4: Execute a function which will make these two separate 'turns' happen consecutively
+
+##### 5: When win condition is met, establish how to reset all values to default, then invoke game function to make cycle repeat
+
+
