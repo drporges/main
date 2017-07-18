@@ -61,11 +61,13 @@ function isBigEnough(element) {
 
 The slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included). The original array will not be modified.
 
+```
 const arr = ['zero', 'one', 'two', 'three'];
 const sliced = arr.slice(1, 3);
 
 console.log(arr);      // ['zero', 'one', 'two', 'three']
 console.log(sliced); // ['one', 'two']
+```
 
 ## .forEach()
 
