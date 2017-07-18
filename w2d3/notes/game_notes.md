@@ -12,9 +12,11 @@ const turn = 0;
 
 ### 2. Objects!
 
-a) Health
-b) Alive: True/False?
-3. Attack Damage?  
+<ul>
+	<li>Health</li>
+	<li>Alive: True/False?</li>
+	<li>Attack Damage?</li>
+</ul>  
 
 #### If you want to make it randomized...
 
@@ -54,4 +56,16 @@ const battle = function(){
 };
 
 battle(); // execute the battle function
+```
+
+### 5. What if the game is over?
+
+```
+if (player health = 0 || player alive=false || enemies eliminated){
+	// reset object/player information to default
+		// maybe you'll have to hard reset your objects to what they were before they changed
+		// OR you can have a prebuilt 'reset' function within your objects which will reset everything to their default values
+
+	// relaunch game function //
+}
 ```
