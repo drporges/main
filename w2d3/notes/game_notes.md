@@ -2,7 +2,7 @@
 
 ## What do you think you're going to need?
 
-### 1. A way to initialize the game.  Are there any initial values we'd want to have?
+### 1. Are there any initial values we'd want to have?
 
 If you'd want to toggle a 'combat', so you can flip between 'true' and 'false' at given points in your game.
 ```
@@ -18,6 +18,29 @@ const turn = 0;
 	<li>Attack Damage?</li>
 </ul>  
 
+So, maybe...
+
+```
+const player = {
+    name: "HMS Invincible",
+    attackDamage: ,
+    playerHP: 75,
+    reset: function(){
+    	// what will happen when game is reset?
+    }
+};
+
+const enemyOne = {
+    name: ,
+    enemyHP: ,
+    alive: ,
+    attackDamage: ,
+    reset: function(){
+    	// maybe you'd want to invoke a reset function when game is over?
+    }
+};
+
+```
 #### If you want to make attack damage randomized...
 
 ```
@@ -49,10 +72,12 @@ const battle = function(){
 	// would I maybe want to launch players turn OR enemy turn depending on if the turn is even or odd?  
 
 		if(turn%2==0){
-		// execute player's turn
+			// execute player's turn
+			// maybe a counter would have to increment by one after each player turn
 		} else {
-		// execute enemy turn
-	}
+			// execute enemy turn
+			// maybe a counter would have to increment by one after each enemy turn
+		}
 	// what if enemy's health = 0?
 	// what if player's health = 0?
 };
@@ -63,7 +88,7 @@ battle(); // execute the battle function.  where would i want to do this?
 ### 5. What if the game is over?
 
 ```
-if (player health = 0 || player alive=false || enemies eliminated){
+if (player health = 0 || player alive=false || enemies eliminated from array || some conditional that is met){
 	// reset object/player information to default
 		// maybe you'll have to hard reset your objects to what they were before they changed
 		// OR you can have a prebuilt 'reset' function within your objects which will reset everything to their default values
