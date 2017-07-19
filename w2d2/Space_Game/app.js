@@ -1,6 +1,6 @@
 const intro = function (){
-alert("Welcome to the Game");
-funStuff();
+    alert("Welcome to the Game");
+    funStuff();
 }
 const funStuff = function () {
 alert("Earth has been attacked by a horde of aliens! You are the captain of the USS Dylan, on a mission to destroy every last alien ship."
@@ -98,7 +98,7 @@ const enemy6 = {
 }
 
 
-// for(let x=0; x<ships.length; x++){
+
 
 // let attackAlien= prompt("Which Alien ship do you want to attack; Enemy 1, Enemy 2, Enemy 3, Enemy 4, Enemy 5, Enemy 6");
 //     if (ships[x].name == attackAlien) {
@@ -116,10 +116,23 @@ const enemy6 = {
 //         obj.health = obj.health - ussDylan.attackDamageDylan
 //  };
 // GO ME
-
+ 
+const ships=[enemy1, enemy2, enemy3, enemy4, enemy5, enemy6];
+const gameOver = function(){
+for(let x=0; x<ships.length; x++){
+        if (ships[x].health < 0){
+        alert('YOU WIN GANG GANG YOU A BEAST');
+        reset();
+        }
+        else{
+            alert('We were not attacked cause you sniped the ship so ' + ussDylan.name + 'is still alive with ' + ussDylan.health + ' remaining');
+            nameShip();
+        }
+    }
+    }
+   
 const nameShip = function(){
     console.log('in name ship');
-    const ships=[enemy1, enemy2, enemy3, enemy4, enemy5, enemy6];
    
     let promptName = prompt("What ship would you like to attack? " + 
     enemy1.name + " " + enemy2.name + " " + enemy3.name + " " + enemy4.name + " " + enemy5.name + " " + enemy6.name + " "); 
@@ -131,12 +144,11 @@ const nameShip = function(){
     if(ship.name == newName){
         futureFunction2(ship);
     }
-    else if  {
-        alert('Learn to spell you idiot, write one of the names correctly')
-        nameShip();
-    }
     });
 };
+
+
+
 
   const futureFunction2= function(enemy){
     console.log('I am in future function 2');
@@ -157,13 +169,15 @@ const nameShip = function(){
     else if(enemy.health <= 0){
             alert('This ship is dead GANG GANG');
             enemy.alive=false;
-                  alert('We were not attacked cause you sniped the ship so' + ussDylan.name + 'is still alive with ' + ussDylan.health + ' remaining');
-                    nameShip();
+            gameOver ();
+
+                  
                 }
+            }
         
         
         
-}
+
 const DylanAttackAlien = function(enemy){
     enemy.attackDamage = Math.floor(Math.random()* 10 + 4); 
     ussDylan.health=ussDylan.health-enemy.attackDamage
@@ -173,14 +187,11 @@ const DylanAttackAlien = function(enemy){
         nameShip();
 
     } else if(ussDylan.health <= 0){
-            alert('BOY WE DEAD!!! You dun fucked up, now everyone you care and love will die...congrats')
-            }
+            alert('BOY WE DEAD!!! You dun fucked up, now everyone you care and love will die...congrats');
             ussDylan.alive=false
             reset();
-    
+        }  
 }
-
-
 
 const reset = function(){
     let answer = prompt("Do you want to keep playing? (yes/no)");
@@ -191,7 +202,8 @@ const reset = function(){
         enemy3.reset(); 
         enemy4.reset(); 
         enemy5.reset(); 
-        enemy6.reset();     
+        enemy6.reset(); 
+        intro();    
     } else {
         alert("WE OUT OF HERE");
         throw "exit";
@@ -199,64 +211,6 @@ const reset = function(){
 }
 
 intro();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
