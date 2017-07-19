@@ -137,7 +137,8 @@ const futureFunction4 = function(enemy){
 	console.log("Your health: " + playerShip1.playerHP);
 	if(playerShip1.playerHP > 0){
 
-		// Here is how you can keep the game rolling.  Which function would you call if you want the player to attack another ship?
+		// Here is how you can keep the game rolling.  Which function would you call 
+		// if you want the player to attack another ship?
 
 	} else if(playerShip1.playerHP <= 0){
 			// insert logic if the player dies.  What would you want the user to see?
@@ -162,3 +163,7 @@ const reset = function(){
 	}
 }
 ```
+
+## 8: Launch the game!
+
+At the bottom of the page, underneath everything... invoke ```intro();```
