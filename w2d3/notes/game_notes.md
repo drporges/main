@@ -83,7 +83,8 @@ const futureFunction1 = function(){
   		futureFunction2(ship);
    	}
 	});
-	// this *cool* function SEARCHES through the array and isolates each individual object within the array.This lets us compare the prompt to each object's name. //
+	// this *cool* function SEARCHES through the array and isolates each individual object 
+	// within the array.This lets us compare the prompt to each object's name. 
 };
 ```
 
@@ -92,7 +93,8 @@ const futureFunction1 = function(){
 ```
 const futureFunction2 = function(enemy){
 
-	// While this function may not 'seem' to do much... This is a means for us to declare that we want a player to go.
+	// While this function may not 'seem' to do much... 
+	// This is a means for us to declare that we want a player to go.
 
 	futureFunction3(enemy);
 }
@@ -108,7 +110,8 @@ const futureFunction3 = function(enemy){
 	// console.log(enemy.alive);
 	if(enemy.enemyHP > 0){
 
-		// I gave you a lot!  What kind of logic do you think would go here, assuming that the enemy's health is greater than 0?  
+		// I gave you a lot!  What kind of logic do you think would go here, 
+		// assuming that the enemy's health is greater than 0?  
 
 		// When your turn is over, you might want to let the enemy attack you, right?
 
@@ -116,7 +119,8 @@ const futureFunction3 = function(enemy){
 
 	} else if(obj.enemyHP <= 0){
 			
-			// if the enemy is DEAD, you might want to go find the function that prompts the user to attack ships.  How do I invoke functions?
+			// if the enemy is DEAD, you might want to go find the function that prompts 
+			// the user to attack ships.  How do I invoke functions?
 
 		}
 		
