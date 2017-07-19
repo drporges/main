@@ -73,6 +73,9 @@ const andrew = {
 	alive: true,
 	attack: function(enemy) {
 		enemy.health = monster.health - this.attackDamage;
+			if enemy.health<0 {
+				
+			}
 		console.log("Andrew is attacking " + enemy.name);
 		console.log(enemy.name + " now has " + enemy.health)
 	}
