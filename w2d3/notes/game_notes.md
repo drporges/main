@@ -70,24 +70,28 @@ Oh, we need to pick an enemy ship, right?  Ahh...
 const futureFunction1 = function(){
 	// You MAY want to alert @ the user as to how much health he/she has?
 
-	let promptName = prompt("What ship would you like to attack? " + enemyShip1.name + " " + enemyShip2.name + " "...); 
+	let promptName = prompt("What ship would you like to attack? " + 
+	enemyShip1.name + " " + enemyShip2.name + " "...); 
 
 	// Something like above would allow you to ask the user which ship he/she would want to attack.
 
 	let newName = promptName.toLowerCase(); 
 
-	arr.forEach(function(ship){ // =========> this *cool* function SEARCHES through the array and 
-		// console.log(ship.name);  					isolates each individual object within the array.  																	//			This lets us compare the prompt to each object's name.
+	arr.forEach(function(ship){ 
+		console.log(ship.name);  					
   	if(ship.name === newName){
   		futureFunction2(ship);
-   }
-});
+   	}
+	});
+	// this *cool* function SEARCHES through the array and isolates each individual object within the array.This lets us compare the prompt to each object's name. //
+};
 ```
 
 ## 4: The Game Function!  
 
 ```
 const futureFunction2 = function(enemy){
+
 	// While this function may not 'seem' to do much... This is a means for us to declare that we want a player to go.
 
 	futureFunction3(enemy);
@@ -98,7 +102,9 @@ const futureFunction2 = function(enemy){
 
 ```
 const futureFunction3 = function(enemy){
+
 	playerShip1.attack = Math.floor(Math.random()* 13 + 5); // This randomizes an attack!
+
 	// console.log(enemy.alive);
 	if(enemy.enemyHP > 0){
 
@@ -120,16 +126,18 @@ const futureFunction3 = function(enemy){
 
 ```
 const futureFunction4 = function(enemy){
-	obj.attack = Math.floor(Math.random()* 10 + 4);
+	enemy.attack = Math.floor(Math.random()* 10 + 4); // random attack
 
 	// insert logic r.e. enemy attacking player
 
 	console.log("Your health: " + playerShip1.playerHP);
 	if(playerShip1.playerHP > 0){
+
 		// Here is how you can keep the game rolling.  Which function would you call if you want the player to attack another ship?
 
 	} else if(playerShip1.playerHP <= 0){
 			// insert logic if the player dies.  What would you want the user to see?
+
 			reset();
 	}
 }
