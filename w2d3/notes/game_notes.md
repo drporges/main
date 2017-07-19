@@ -1,103 +1,5 @@
 # Game Logic
 
-## What do you think you're going to need?
-
-### 1. Are there any initial values we'd want to have?
-
-If you'd want to toggle a 'combat', so you can flip between 'true' and 'false' at given points in your game.
-```
-const combat = true;
-const turn = 0;
-```
-
-### 2. Objects!
-
-<ul>
-	<li>Health</li>
-	<li>Alive: True/False?</li>
-	<li>Attack Damage?</li>
-</ul>  
-
-So, maybe...
-
-```
-const player = {
-    name: "HMS Invincible",
-    attackDamage: ,
-    playerHP: 75,
-    reset: function(){
-    	// what will happen when game is reset?
-    }
-};
-
-const enemyOne = {
-    name: ,
-    enemyHP: ,
-    alive: ,
-    attackDamage: ,
-    reset: function(){
-    	// maybe you'd want to invoke a reset function when game is over?
-    }
-};
-
-```
-#### If you want to make attack damage randomized...
-
-```
-const playerAttackDamage = Math.floor(Math.random()* 13 + 5); // sets dmg to be between 5 and 13
-```
-
-### 3. How does the enemy take damage?
-
-```
-	currentShip.enemyHP = currentShip.enemyHP - playerAttackDamage;
-```
-
-Where might this formula be useful?
-
-### 4. Would I maybe want different functions to determine what happens during a player turn, and during an ememy turn?
-
-```
-const playerTurn = function(){
-	// code regarding player attacking current enemy
-};
-
-const enemyTurn = function(){
-	// code regarding current enemy attacking player
-};
-
-const battle = function(){
-// this should be where the main 'battle' or your game takes place.  notice how you can re-invoke this function whenever you'd want?
-
-	// would I maybe want to launch players turn OR enemy turn depending on if the turn is even or odd?  
-
-		if(turn%2==0){
-			// execute player's turn
-			// maybe a counter would have to increment by one after each player turn
-		} else {
-			// execute enemy turn
-			// maybe a counter would have to increment by one after each enemy turn
-		}
-	// what if enemy's health = 0?
-	// what if player's health = 0?
-};
-
-battle(); // execute the battle function.  where would i want to do this?
-```
-
-### 5. What if the game is over?
-
-```
-if (player health = 0 || player alive=false || enemies eliminated from array || some conditional that is met){
-	// reset object/player information to default
-		// maybe you'll have to hard reset your objects to what they were before they changed
-		// OR you can have a prebuilt 'reset' function within your objects which will reset everything to their default values
-
-	// relaunch game function //
-}
-```
-
-
 ## So, overall structure should be like.
 
 ##### 1: Declare global variables
@@ -111,3 +13,140 @@ if (player health = 0 || player alive=false || enemies eliminated from array || 
 ##### 5: When win condition is met, establish how to reset all values to default, then invoke game function to make cycle repeat
 
 
+## 1: Establish your global variables.
+
+#### Your ships are going to need...
+
+<ul>
+	<li>Health</li>
+	<li>Alive: True/False?</li>
+	<li>Attack Damage?</li>
+</ul>  
+
+So, maybe...
+
+```
+const playerShip1 = {
+    name: " ",
+    playerHP: ,
+    attack: ,
+    alive: true,
+    reset: function(){
+        this.playerHP = ;
+        this.alive = ;
+    }
+}
+
+const enemyShip1 = {
+    name: " ",
+    enemyHP: ,
+    attack: ,
+    alive: true ,
+    reset: function(){
+        this.enemyHP = ;
+        this.alive = ;
+    }
+}
+
+const arr= [enemyShip1, enemyShip2...];
+
+```
+
+## 2: I'm going to MAYBE want a way to kick off the game:
+
+```
+const intro = function(){
+	alert("This is the beginning!!!11");
+	futureFunction1();
+}
+```
+### What is ```futureFunction1()```?  It's a function that we haven't defined yet, but what do you think it would be good for?
+
+Oh, we need to pick an enemy ship, right?  Ahh...
+
+## 3: Pick the enemy ship!
+
+```
+const futureFunction1 = function(){
+	// You MAY want to alert @ the user as to how much health he/she has?
+
+	let promptName = prompt("What ship would you like to attack? " + enemyShip1.name + " " + enemyShip2.name + " "...); 
+
+	// Something like above would allow you to ask the user which ship he/she would want to attack.
+
+	let newName = promptName.toLowerCase(); 
+
+	arr.forEach(function(ship){ // =========> this *cool* function SEARCHES through the array and 
+		// console.log(ship.name);  					isolates each individual object within the array.  																	//			This lets us compare the prompt to each object's name.
+  	if(ship.name === newName){
+  		futureFunction2(ship);
+   }
+});
+```
+
+## 4: The Game Function!  
+
+```
+const futureFunction2 = function(enemy){
+	// While this function may not 'seem' to do much... This is a means for us to declare that we want a player to go.
+
+	futureFunction3(enemy);
+}
+```
+
+## 5: The Player's Turn!
+
+```
+const futureFunction3 = function(enemy){
+	playerShip1.attack = Math.floor(Math.random()* 13 + 5); // This randomizes an attack!
+	// console.log(enemy.alive);
+	if(enemy.enemyHP > 0){
+
+		// I gave you a lot!  What kind of logic do you think would go here, assuming that the enemy's health is greater than 0?  
+
+		// When your turn is over, you might want to let the enemy attack you, right?
+
+		futureFunction4(enemy);
+
+	} else if(obj.enemyHP <= 0){
+			
+			// if the enemy is DEAD, you might want to go find the function that prompts the user to attack ships.  How do I invoke functions?
+
+		}
+		
+}
+```
+## 6: The Enemy's Turn!
+
+```
+const futureFunction4 = function(enemy){
+	obj.attack = Math.floor(Math.random()* 10 + 4);
+
+	// insert logic r.e. enemy attacking player
+
+	console.log("Your health: " + playerShip1.playerHP);
+	if(playerShip1.playerHP > 0){
+		// Here is how you can keep the game rolling.  Which function would you call if you want the player to attack another ship?
+
+	} else if(playerShip1.playerHP <= 0){
+			// insert logic if the player dies.  What would you want the user to see?
+			reset();
+	}
+}
+
+```
+
+## 7: A hard reset
+
+```
+const reset = function(){
+	// You MAY want to prompt the user if he/she wants to keep playing
+	if(answer == "yes"){
+		// Look at your object methods and figure out how to invoke them.
+		// Invoke a function which will prompt the user to play again.		
+	} else {
+		alert("YIPPIE KAY YAY");
+		throw "exit";
+	}
+}
+```
