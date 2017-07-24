@@ -13,7 +13,7 @@
 “It isn’t too hard to add a text field, it is only one line of code. The challenging part is that we will need to write a function to get the text in the field. A function is a bit of code that does a specific action, like getting text. Think of it like when you go to brush your teeth. The action of brushing your teeth needs a bunch of different parts, like getting the toothbrush and toothpaste, then putting the toothpaste on the brush. Instead of describing the whole process, we can just say ‘brush your teeth’ and know what needs to be done. That is exactly what happens with code. We could write a function called ‘brushTeeth’ that would have all those steps in it. Can anyone think of other examples of real life actions we could make a function for?”
 
 Imagine something like...
-
+```
 function brushTeeth(){
   1. pick up tooth brush
   2. pick up tooth paste
@@ -24,7 +24,7 @@ function brushTeeth(){
     brushTeeth();
   }
 }
-
+```
 * * *
 
 Open an index.html and scripts.js, and add this code.  
