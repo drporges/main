@@ -116,6 +116,16 @@ contentContainer.appendChild(brandNewH1);
 contentContainer.removeChild(brandNewH1);
 ```
 
+#### DOM node additions (append)
+
+```
+const contentContainer = document.getElementById('content-container');
+const brandNewH1 = document.createElement('h1');
+const statement = "Hello, I am a thing";
+brandNewH1.append(statement);
+contentContainer.append(element);
+```
+
 #### Node Editing
 - node.innerHTML: sets or returns the elements descendants
 ```

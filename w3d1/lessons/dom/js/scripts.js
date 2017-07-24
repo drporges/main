@@ -180,6 +180,14 @@ console.log("I'm working!");
 // contentContainer.removeChild(brandNewH1);
 // console.log('I just removed the h1');
 
+//// DOM ADDITIONS
+// const contentContainer = document.getElementById('content-container');
+// const brandNewH1 = document.createElement('h1');
+// const statement = "Hello, I am a thing";
+// brandNewH1.append(statement);
+// contentContainer.append(brandNewH1);
+
+
 
 //// NODE EDITING
 //// • node.innerHTML: sets or returns the elements descendants
