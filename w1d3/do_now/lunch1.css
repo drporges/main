@@ -43,7 +43,8 @@ span{
 }
 body {
   margin-top: 30px;
-  margin-left: 420px;
+  margin-left: 400px;
+  align-content: center;
   width: 500px;
   text-align: center;
   background-color: lightgreen;

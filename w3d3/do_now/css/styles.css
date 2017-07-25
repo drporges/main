@@ -1,0 +1,10 @@
+body{
+	background-color: papayawhip;
+	text-align: center;
+}
+
+#button{
+	height: 5em;
+	width: 10em;
+	font-family: "Helvetica";
+}
