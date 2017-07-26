@@ -1,0 +1,26 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+
+  /*you have use overflow if content is too big for box*/
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: lime;
+  text-align: center;
+  padding: 14px 16px;
+  /*this means top/bottom PADDING = 14px, left/right 16px*/
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
