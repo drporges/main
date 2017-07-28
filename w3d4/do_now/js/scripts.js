@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function() {
 console.log('hello');
 
@@ -56,3 +57,6 @@ const swimLife = function(){
 
 
 });
+=======
+console.log('hi');
+>>>>>>> b542ff795888f9e0414b5910ae709c45ead4360a

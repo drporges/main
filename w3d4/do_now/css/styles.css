@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #body{
 	background: #76b852;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
@@ -10,4 +11,8 @@ font-family: 'Nunito', sans-serif;
 
 #para{
 	font-size: 20px
+=======
+body{
+	background-color: papayawhip;
+>>>>>>> b542ff795888f9e0414b5910ae709c45ead4360a
 }

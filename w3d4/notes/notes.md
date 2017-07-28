@@ -32,6 +32,10 @@
 
 - set html inside element: `jQueryElement.html("<some html>")`
 
+<<<<<<< HEAD
 - check if element has a class: `jQueryElement.hassClass('.someClass')`
+=======
+- check if element has a class: `jQueryElement.hasClass('.someClass')`
+>>>>>>> b542ff795888f9e0414b5910ae709c45ead4360a
 
 - set a css property on an element: `jQueryElement.css('property', 'value')`
